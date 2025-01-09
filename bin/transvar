@@ -160,6 +160,7 @@ if __name__ == '__main__':
     p = subparsers.add_parser('codonsearch', help="search equivalent codon representations")
     parser_add_mutation(p)
     parser_add_annotation(p)
+    parser_add_general(p)
     p.set_defaults(func=main_codonsearch)
 
     p = subparsers.add_parser('config', help="show configurations")
